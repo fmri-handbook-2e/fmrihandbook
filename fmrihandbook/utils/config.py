@@ -23,7 +23,7 @@ def get_config(nbfile=None, configfile=None, basedir=None, required_dirs=None):
     config: a Box instance
     """
 
-    repo = git.Repo(os.path.dirname(__file__),
+    repo = git.Repo(os.path.dirname(nbfile),
                     search_parent_directories=True)
     repo_path = repo.git.rev_parse("--show-toplevel")
 
