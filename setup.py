@@ -140,7 +140,7 @@ setup(
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'nibabel', 'nipype', 'python-box', 'GitPython',
+        'nibabel', 'nipype', 'python-box', 'GitPython', 'pyyaml', 
         'pandas', 'numpy', 'scipy', 'nilearn', 'matplotlib', 'scikit-learn'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
