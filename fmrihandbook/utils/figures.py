@@ -10,14 +10,14 @@ import os
 import matplotlib.pyplot as plt
 
 
-def savefig(fig, name, config, use_tight_layout=True):
+def savefig(fig, name, config, dpi=1200):
     assert 'figure_dir' in config
     # print the current figure 
     plt.tight_layout()
     for format in config.img_formats:
         fig.savefig(
             os.path.join(config.figure_dir, name + '.' + format),
-            format=format, dpi=1200)
+            format=format, dpi=dpi)
 
 
 def showPDF(infile, showLabel=True):
